@@ -1,8 +1,13 @@
+import Layout from './Components/Layout'
+import './styles/App.css'
+import Home from './Components/Pages/Home'
 function App() {
 
   return (
     <>
-      <h1>This is React</h1>
+      <Layout >
+        <Home />
+      </Layout>
     </>
   )
 }
