@@ -1,12 +1,14 @@
 import Layout from './Components/Layout'
+import SingUp from './Components/SingUp'
 import './styles/App.css'
-import Home from './Components/Pages/Home'
+// import Home from './Components/Pages/Home'
 function App() {
 
   return (
     <>
       <Layout >
-        <Home />
+        {/* <Home /> */}
+        <SingUp />
       </Layout>
     </>
   )
