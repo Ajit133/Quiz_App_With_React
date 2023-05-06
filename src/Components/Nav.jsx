@@ -1,20 +1,22 @@
-import classes from '../styles/Nav.module.css'
-import Account from './Account';
-import logo from '../assets/images/logo.png'
+import classes from "../styles/Nav.module.css";
+import Account from "./Account";
+import logo from "../assets/images/logo.png";
+import { Link } from "react-router-dom";
 function Nav() {
-    return (
-      <nav className={classes.nav}>
-        <ul>
+  return (
+    <nav className={classes.nav}>
+      <ul>
         <li>
-          <a href="index.html" className={classes.brand}>
+          <Link to="/" className={classes.brand}>
             <img src={logo} alt="Learn with Ajit Logo" />
             <h3>Learn with Ajit</h3>
-          </a>
+          </Link>
         </li>
       </ul>
       <Account />
-      </nav>
-    );
+    </nav>
+    
+  );
 }
 
 export default Nav;
