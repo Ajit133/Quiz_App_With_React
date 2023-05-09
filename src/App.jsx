@@ -6,10 +6,14 @@ import SingUp from "./Components/SingUp";
 import "./styles/App.css";
 import Home from "./Components/Pages/Home";
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+// import AuthProvider from "../contexts/AuthContext";
+import { AuthProvider } from "../contexts/AuthContext";
+
 function App() {
   return (
     <>
     <Router>
+    <AuthProvider>
     <Layout>
      <Routes>
         <Route path="/" element={<Home/>} />
@@ -18,7 +22,9 @@ function App() {
         <Route path="/quiz" element={<Quiz/>} />
         <Route path="/result" element={<Result/>} />
      </Routes>
-    </Layout>  
+    </Layout> 
+    </AuthProvider> 
+    
     </Router>
      
     </>
