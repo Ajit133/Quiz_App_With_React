@@ -4,6 +4,7 @@ const app = initializeApp(
     {
         apiKey: "AIzaSyCaHpA8FVt6Wyde4aA4mbRitpZ5v0Yp-yI",
         authDomain: "react-quiz-app-82aaf.firebaseapp.com",
+        databaseURL: "https://react-quiz-app-82aaf-default-rtdb.asia-southeast1.firebasedatabase.app",
         projectId: "react-quiz-app-82aaf",
         storageBucket: "react-quiz-app-82aaf.appspot.com",
         messagingSenderId: "643367272103",
